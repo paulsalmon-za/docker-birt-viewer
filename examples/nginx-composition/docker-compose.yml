@@ -11,7 +11,7 @@ services:
     ports:
       - "80:80"
   birt:
-    image: birt-viewer
+    image: dodevza/birt-viewer
     ports:
       - "8080:8080"
     environment:
