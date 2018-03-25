@@ -1,0 +1,627 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<report xmlns="http://www.eclipse.org/birt/2005/design" version="3.2.23" id="1">
+    <property name="createdBy">Eclipse BIRT Designer Version 4.6.0.v201606072122</property>
+    <property name="units">in</property>
+    <property name="iconFile">/templates/dual_column_listing.gif</property>
+    <property name="cheatSheet">org.eclipse.birt.report.designer.ui.cheatsheet.dualcolumnlisting</property>
+    <property name="bidiLayoutOrientation">ltr</property>
+    <property name="imageDPI">120</property>
+    <parameters>
+        <scalar-parameter name="message" id="858">
+            <property name="valueType">static</property>
+            <property name="isRequired">false</property>
+            <property name="dataType">string</property>
+            <property name="distinct">true</property>
+            <simple-property-list name="defaultValue">
+                <value type="constant"></value>
+            </simple-property-list>
+            <list-property name="selectionList"/>
+            <property name="paramType">simple</property>
+            <property name="controlType">text-box</property>
+            <structure name="format">
+                <property name="category">Unformatted</property>
+            </structure>
+        </scalar-parameter>
+    </parameters>
+    <styles>
+        <style name="report" id="25">
+            <property name="fontFamily">sans-serif</property>
+            <property name="fontSize">10pt</property>
+        </style>
+    </styles>
+    <page-setup>
+        <simple-master-page name="Simple MasterPage" id="2">
+            <property name="type">a4</property>
+            <property name="orientation">portrait</property>
+            <property name="leftMargin">0.65in</property>
+            <property name="rightMargin">0.1in</property>
+            <property name="backgroundImage">SideBackGround.jpg</property>
+            <property name="backgroundImageType">embed</property>
+            <property name="backgroundPositionX">right</property>
+            <property name="backgroundRepeat">repeat-y</property>
+            <property name="backgroundSizeHeight">10px</property>
+            <property name="backgroundSizeWidth">9cm</property>
+            <property name="overflow">visible</property>
+            <property name="headerHeight">1in</property>
+            <property name="footerHeight">0in</property>
+            <page-header>
+                <grid id="709">
+                    <property name="overflow">visible</property>
+                    <column id="710"/>
+                    <row id="711">
+                        <cell id="712">
+                            <property name="paddingRight">0pt</property>
+                            <property name="textAlign">right</property>
+                            <property name="overflow">visible</property>
+                            <image id="713">
+                                <property name="marginRight">120pt</property>
+                                <property name="overflow">visible</property>
+                                <property name="height">0.5916666666666667in</property>
+                                <property name="width">1.3166666666666667in</property>
+                                <property name="source">embed</property>
+                                <property name="imageName">Birt-logo.png</property>
+                            </image>
+                        </cell>
+                    </row>
+                </grid>
+            </page-header>
+        </simple-master-page>
+    </page-setup>
+    <body>
+        <grid id="397">
+            <property name="fontFamily">"Arial"</property>
+            <property name="color">#6C7A83</property>
+            <column id="398"/>
+            <column id="399">
+                <property name="width">8cm</property>
+            </column>
+            <row id="400">
+                <cell id="401">
+                    <property name="paddingRight">32pt</property>
+                    <grid id="403">
+                        <property name="fontFamily">"Arial"</property>
+                        <property name="marginTop">0pt</property>
+                        <column id="404"/>
+                        <row id="405">
+                            <cell id="406">
+                                <property name="paddingTop">1pt</property>
+                                <label id="821">
+                                    <property name="backgroundAttachment">scroll</property>
+                                    <property name="backgroundPositionX">0%</property>
+                                    <property name="backgroundPositionY">0%</property>
+                                    <property name="backgroundRepeat">repeat</property>
+                                    <property name="fontFamily">"Arial"</property>
+                                    <property name="fontSize">26pt</property>
+                                    <property name="fontWeight">bold</property>
+                                    <property name="fontStyle">normal</property>
+                                    <property name="fontVariant">normal</property>
+                                    <property name="color">#42187E</property>
+                                    <property name="textLineThrough">none</property>
+                                    <property name="textOverline">none</property>
+                                    <property name="textUnderline">none</property>
+                                    <property name="borderBottomColor">black</property>
+                                    <property name="borderBottomStyle">none</property>
+                                    <property name="borderBottomWidth">medium</property>
+                                    <property name="borderLeftColor">black</property>
+                                    <property name="borderLeftStyle">none</property>
+                                    <property name="borderLeftWidth">medium</property>
+                                    <property name="borderRightColor">black</property>
+                                    <property name="borderRightStyle">none</property>
+                                    <property name="borderRightWidth">medium</property>
+                                    <property name="borderTopColor">black</property>
+                                    <property name="borderTopStyle">none</property>
+                                    <property name="borderTopWidth">medium</property>
+                                    <property name="marginTop">0pt</property>
+                                    <property name="marginLeft">0pt</property>
+                                    <property name="marginBottom">0pt</property>
+                                    <property name="marginRight">0pt</property>
+                                    <property name="paddingTop">1pt</property>
+                                    <property name="paddingLeft">1pt</property>
+                                    <property name="paddingBottom">1pt</property>
+                                    <property name="paddingRight">1pt</property>
+                                    <property name="letterSpacing">normal</property>
+                                    <property name="lineHeight">normal</property>
+                                    <property name="orphans">2</property>
+                                    <property name="textTransform">none</property>
+                                    <property name="whiteSpace">normal</property>
+                                    <property name="widows">2</property>
+                                    <property name="wordSpacing">normal</property>
+                                    <property name="display">block</property>
+                                    <property name="pageBreakAfter">auto</property>
+                                    <property name="pageBreakBefore">auto</property>
+                                    <property name="pageBreakInside">auto</property>
+                                    <property name="showIfBlank">false</property>
+                                    <property name="canShrink">false</property>
+                                    <property name="overflow">hidden</property>
+                                    <text-property name="text">BIRT VIEWER</text-property>
+                                </label>
+                            </cell>
+                        </row>
+                        <row id="407">
+                            <cell id="408">
+                                <property name="paddingTop">8pt</property>
+                            </cell>
+                        </row>
+                        <row id="409">
+                            <cell id="410">
+                                <label id="822">
+                                    <property name="backgroundAttachment">scroll</property>
+                                    <property name="backgroundPositionX">0%</property>
+                                    <property name="backgroundPositionY">0%</property>
+                                    <property name="backgroundRepeat">repeat</property>
+                                    <property name="fontFamily">"Arial"</property>
+                                    <property name="fontSize">14pt</property>
+                                    <property name="fontWeight">normal</property>
+                                    <property name="fontStyle">normal</property>
+                                    <property name="fontVariant">normal</property>
+                                    <property name="color">#42187E</property>
+                                    <property name="textLineThrough">none</property>
+                                    <property name="textOverline">none</property>
+                                    <property name="textUnderline">none</property>
+                                    <property name="borderBottomColor">black</property>
+                                    <property name="borderBottomStyle">none</property>
+                                    <property name="borderBottomWidth">medium</property>
+                                    <property name="borderLeftColor">black</property>
+                                    <property name="borderLeftStyle">none</property>
+                                    <property name="borderLeftWidth">medium</property>
+                                    <property name="borderRightColor">black</property>
+                                    <property name="borderRightStyle">none</property>
+                                    <property name="borderRightWidth">medium</property>
+                                    <property name="borderTopColor">black</property>
+                                    <property name="borderTopStyle">none</property>
+                                    <property name="borderTopWidth">medium</property>
+                                    <property name="marginTop">0pt</property>
+                                    <property name="marginLeft">0pt</property>
+                                    <property name="marginBottom">0pt</property>
+                                    <property name="marginRight">0pt</property>
+                                    <property name="paddingTop">1pt</property>
+                                    <property name="paddingLeft">1pt</property>
+                                    <property name="paddingBottom">1pt</property>
+                                    <property name="paddingRight">1pt</property>
+                                    <property name="letterSpacing">normal</property>
+                                    <property name="lineHeight">normal</property>
+                                    <property name="orphans">2</property>
+                                    <property name="textTransform">none</property>
+                                    <property name="whiteSpace">normal</property>
+                                    <property name="widows">2</property>
+                                    <property name="wordSpacing">normal</property>
+                                    <property name="display">block</property>
+                                    <property name="pageBreakAfter">auto</property>
+                                    <property name="pageBreakBefore">auto</property>
+                                    <property name="pageBreakInside">auto</property>
+                                    <property name="showIfBlank">false</property>
+                                    <property name="canShrink">false</property>
+                                    <property name="overflow">hidden</property>
+                                    <text-property name="text">dodevza/birt-viewer</text-property>
+                                </label>
+                            </cell>
+                        </row>
+                        <row id="411">
+                            <cell id="412">
+                                <label id="823">
+                                    <property name="backgroundAttachment">scroll</property>
+                                    <property name="backgroundPositionX">0%</property>
+                                    <property name="backgroundPositionY">0%</property>
+                                    <property name="backgroundRepeat">repeat</property>
+                                    <property name="fontFamily">"Arial"</property>
+                                    <property name="fontSize">9pt</property>
+                                    <property name="fontWeight">normal</property>
+                                    <property name="fontStyle">normal</property>
+                                    <property name="fontVariant">normal</property>
+                                    <property name="color">#6C7A83</property>
+                                    <property name="textLineThrough">none</property>
+                                    <property name="textOverline">none</property>
+                                    <property name="textUnderline">none</property>
+                                    <property name="borderBottomColor">black</property>
+                                    <property name="borderBottomStyle">none</property>
+                                    <property name="borderBottomWidth">medium</property>
+                                    <property name="borderLeftColor">black</property>
+                                    <property name="borderLeftStyle">none</property>
+                                    <property name="borderLeftWidth">medium</property>
+                                    <property name="borderRightColor">black</property>
+                                    <property name="borderRightStyle">none</property>
+                                    <property name="borderRightWidth">medium</property>
+                                    <property name="borderTopColor">black</property>
+                                    <property name="borderTopStyle">none</property>
+                                    <property name="borderTopWidth">medium</property>
+                                    <property name="marginTop">0pt</property>
+                                    <property name="marginLeft">0pt</property>
+                                    <property name="marginBottom">0pt</property>
+                                    <property name="marginRight">0pt</property>
+                                    <property name="paddingTop">8pt</property>
+                                    <property name="paddingLeft">1pt</property>
+                                    <property name="paddingBottom">1pt</property>
+                                    <property name="paddingRight">1pt</property>
+                                    <property name="textAlign">justify</property>
+                                    <property name="letterSpacing">normal</property>
+                                    <property name="lineHeight">normal</property>
+                                    <property name="orphans">2</property>
+                                    <property name="textTransform">none</property>
+                                    <property name="whiteSpace">normal</property>
+                                    <property name="widows">2</property>
+                                    <property name="wordSpacing">normal</property>
+                                    <property name="display">block</property>
+                                    <property name="pageBreakAfter">auto</property>
+                                    <property name="pageBreakBefore">auto</property>
+                                    <property name="pageBreakInside">auto</property>
+                                    <property name="showIfBlank">false</property>
+                                    <property name="canShrink">false</property>
+                                    <property name="overflow">hidden</property>
+                                    <text-property name="text">Comprehensive configuration, everything you need to be able to generate quality reports using Birt's viewer</text-property>
+                                </label>
+                            </cell>
+                        </row>
+                        <row id="413">
+                            <cell id="414"/>
+                        </row>
+                        <row id="415">
+                            <cell id="416">
+                                <label id="418">
+                                    <property name="fontSize">16pt</property>
+                                    <property name="fontWeight">bold</property>
+                                    <property name="color">#42187E</property>
+                                    <property name="paddingTop">24pt</property>
+                                    <property name="paddingBottom">24pt</property>
+                                    <text-property name="text">What's Included</text-property>
+                                </label>
+                            </cell>
+                        </row>
+                        <row id="427">
+                            <cell id="428"/>
+                        </row>
+                        <row id="422">
+                            <cell id="423">
+                                <label id="824">
+                                    <property name="backgroundAttachment">scroll</property>
+                                    <property name="backgroundPositionX">0%</property>
+                                    <property name="backgroundPositionY">0%</property>
+                                    <property name="backgroundRepeat">repeat</property>
+                                    <property name="fontFamily">"Arial"</property>
+                                    <property name="fontSize">10pt</property>
+                                    <property name="fontWeight">normal</property>
+                                    <property name="fontStyle">normal</property>
+                                    <property name="fontVariant">normal</property>
+                                    <property name="color">#6C7A83</property>
+                                    <property name="textLineThrough">none</property>
+                                    <property name="textOverline">none</property>
+                                    <property name="textUnderline">none</property>
+                                    <property name="borderBottomColor">black</property>
+                                    <property name="borderBottomStyle">none</property>
+                                    <property name="borderBottomWidth">medium</property>
+                                    <property name="borderLeftColor">black</property>
+                                    <property name="borderLeftStyle">none</property>
+                                    <property name="borderLeftWidth">medium</property>
+                                    <property name="borderRightColor">black</property>
+                                    <property name="borderRightStyle">none</property>
+                                    <property name="borderRightWidth">medium</property>
+                                    <property name="borderTopColor">black</property>
+                                    <property name="borderTopStyle">none</property>
+                                    <property name="borderTopWidth">medium</property>
+                                    <property name="marginTop">0pt</property>
+                                    <property name="marginLeft">0pt</property>
+                                    <property name="marginBottom">0pt</property>
+                                    <property name="marginRight">0pt</property>
+                                    <property name="paddingTop">1pt</property>
+                                    <property name="paddingLeft">1pt</property>
+                                    <property name="paddingBottom">1pt</property>
+                                    <property name="paddingRight">1pt</property>
+                                    <property name="textAlign">justify</property>
+                                    <property name="letterSpacing">normal</property>
+                                    <property name="lineHeight">normal</property>
+                                    <property name="orphans">2</property>
+                                    <property name="textTransform">none</property>
+                                    <property name="whiteSpace">normal</property>
+                                    <property name="widows">2</property>
+                                    <property name="wordSpacing">normal</property>
+                                    <property name="display">block</property>
+                                    <property name="pageBreakAfter">auto</property>
+                                    <property name="pageBreakBefore">auto</property>
+                                    <property name="pageBreakInside">auto</property>
+                                    <property name="showIfBlank">false</property>
+                                    <property name="canShrink">false</property>
+                                    <property name="overflow">hidden</property>
+                                    <text-property name="text">The image inherits from tomcat:8-alpine. By default the image contains jdbc drivers for a couple of popular databases. The fonts included ensures that pdf being generated by the viewer will generate fonts used on windows. Ionicons and Font Awesome was included to better visualise information in reports.</text-property>
+                                </label>
+                            </cell>
+                        </row>
+                        <row id="842">
+                            <cell id="843">
+                                <label id="844">
+                                    <property name="fontSize">16pt</property>
+                                    <property name="fontWeight">bold</property>
+                                    <property name="color">#42187E</property>
+                                    <property name="paddingTop">24pt</property>
+                                    <property name="paddingBottom">24pt</property>
+                                    <text-property name="text">Getting Started</text-property>
+                                </label>
+                            </cell>
+                        </row>
+                        <row id="847">
+                            <cell id="848"/>
+                        </row>
+                        <row id="849">
+                            <cell id="850">
+                                <text id="852">
+                                    <property name="textAlign">left</property>
+                                    <property name="contentType">html</property>
+                                    <text-property name="content"><![CDATA[<h5>
+Running the container
+</h5>
+
+<p>
+docker run -p 8080:8080 dodevza/birt-viewer
+</p>
+
+<h5>
+Mounting the reports folder
+</h5>
+
+<p>
+docker run -p 8080:8080 -v c/reports:/var/opt/volumes dodevza/birt-viewer
+</p>
+<h5>
+More examples
+</h5>
+<p>
+Please check out the github repository for examples how to configure the birt viewer with docker-compose
+</p>]]></text-property>
+                                </text>
+                            </cell>
+                        </row>
+                        <row id="853">
+                            <cell id="854"/>
+                        </row>
+                        <row id="855">
+                            <cell id="856">
+                                <text id="857">
+                                    <property name="textAlign">left</property>
+                                    <property name="contentType">html</property>
+                                    <text-property name="content"><![CDATA[<h5>
+Exporting files without the viewer
+</h5>
+
+<p>
+Incase you wanted to generate the exported file without showing the view frame, the preview url is very usefull
+</p>
+<p>
+http:localhost:8080/preview?__report=introduction.rptdesign&amp;__format=pdf&amp;message=hello%20world&amp;__parameterpage=false
+</p>]]></text-property>
+                                </text>
+                            </cell>
+                        </row>
+                        <row id="859">
+                            <cell id="860"/>
+                        </row>
+                        <row id="864">
+                            <list-property name="visibility">
+                                <structure>
+                                    <property name="format">all</property>
+                                    <expression name="valueExpr" type="javascript">!params["message"].value</expression>
+                                </structure>
+                            </list-property>
+                            <cell id="865">
+                                <label id="866">
+                                    <property name="fontWeight">bold</property>
+                                    <text-property name="text">Your Message</text-property>
+                                </label>
+                            </cell>
+                        </row>
+                        <row id="861">
+                            <list-property name="visibility">
+                                <structure>
+                                    <property name="format">all</property>
+                                    <expression name="valueExpr" type="javascript">!params["message"].value</expression>
+                                </structure>
+                            </list-property>
+                            <cell id="862">
+                                <data id="863">
+                                    <list-property name="boundDataColumns">
+                                        <structure>
+                                            <property name="name">message</property>
+                                            <expression name="expression" type="javascript">params["message"]</expression>
+                                            <property name="dataType">string</property>
+                                        </structure>
+                                    </list-property>
+                                    <property name="resultSetColumn">message</property>
+                                </data>
+                            </cell>
+                        </row>
+                    </grid>
+                </cell>
+                <cell id="402">
+                    <grid id="431">
+                        <column id="432"/>
+                        <row id="433">
+                            <cell id="434">
+                                <label id="439">
+                                    <property name="fontSize">16pt</property>
+                                    <property name="fontWeight">bold</property>
+                                    <property name="color">#42187E</property>
+                                    <property name="paddingTop">24pt</property>
+                                    <property name="paddingBottom">24pt</property>
+                                    <text-property name="text">JDBC DRIVERS</text-property>
+                                </label>
+                            </cell>
+                        </row>
+                        <row id="435">
+                            <cell id="436">
+                                <label id="825">
+                                    <text-property name="text">The following drivers have been included in the docker image</text-property>
+                                </label>
+                            </cell>
+                        </row>
+                        <row id="437">
+                            <cell id="438">
+                                <label id="826">
+                                    <text-property name="text">• MSSQL&#13;
+• MySQL&#13;
+• PostgreSQL</text-property>
+                                </label>
+                            </cell>
+                        </row>
+                    </grid>
+                    <grid id="447">
+                        <column id="448"/>
+                        <row id="449">
+                            <cell id="450">
+                                <label id="451">
+                                    <property name="fontSize">16pt</property>
+                                    <property name="fontWeight">bold</property>
+                                    <property name="color">#42187E</property>
+                                    <property name="paddingTop">24pt</property>
+                                    <property name="paddingBottom">24pt</property>
+                                    <text-property name="text">FONTS</text-property>
+                                </label>
+                            </cell>
+                        </row>
+                        <row id="452">
+                            <cell id="453">
+                                <label id="827">
+                                    <text-property name="text">The docker image contains the following fonts</text-property>
+                                </label>
+                            </cell>
+                        </row>
+                        <row id="454">
+                            <cell id="455">
+                                <label id="828">
+                                    <text-property name="text">• Microsoft True Type Fonts&#13;
+• Open Sans&#13;
+• Ionicons&#13;
+• Font Awesome</text-property>
+                                </label>
+                            </cell>
+                        </row>
+                    </grid>
+                    <grid id="831">
+                        <column id="832"/>
+                        <row id="833">
+                            <cell id="834">
+                                <label id="835">
+                                    <property name="fontSize">16pt</property>
+                                    <property name="fontWeight">bold</property>
+                                    <property name="color">#42187E</property>
+                                    <property name="paddingTop">24pt</property>
+                                    <property name="paddingBottom">24pt</property>
+                                    <text-property name="text">VOLUMES</text-property>
+                                </label>
+                            </cell>
+                        </row>
+                        <row id="836">
+                            <cell id="837">
+                                <label id="838">
+                                    <text-property name="text">Mapping the following path will enable you to provide your own reports</text-property>
+                                </label>
+                            </cell>
+                        </row>
+                        <row id="839">
+                            <cell id="840">
+                                <label id="841">
+                                    <property name="fontWeight">bold</property>
+                                    <text-property name="text">/var/opt/reports</text-property>
+                                </label>
+                            </cell>
+                        </row>
+                    </grid>
+                    <grid id="636">
+                        <property name="pageBreakInside">avoid</property>
+                        <column id="637"/>
+                        <row id="638">
+                            <cell id="639">
+                                <property name="color">#6C7A83</property>
+                                <label id="640">
+                                    <property name="fontSize">16pt</property>
+                                    <property name="fontWeight">bold</property>
+                                    <property name="color">#42187E</property>
+                                    <property name="paddingTop">24pt</property>
+                                    <property name="paddingBottom">24pt</property>
+                                    <text-property name="text">SOURCE</text-property>
+                                </label>
+                            </cell>
+                        </row>
+                        <row id="641">
+                            <cell id="642">
+                                <property name="color">#6C7A83</property>
+                                <label id="845">
+                                    <text-property name="text">All source code available on github</text-property>
+                                </label>
+                            </cell>
+                        </row>
+                        <row id="643">
+                            <cell id="644">
+                                <property name="color">#6C7A83</property>
+                                <label id="846">
+                                    <property name="fontWeight">bold</property>
+                                    <text-property name="text">https://www.github.com/paulsalmon-za</text-property>
+                                </label>
+                            </cell>
+                        </row>
+                    </grid>
+                </cell>
+            </row>
+        </grid>
+    </body>
+    <list-property name="images">
+        <structure>
+            <property name="name">Birt-logo.png</property>
+            <property name="type">image/png</property>
+            <property name="data">
+                iVBORw0KGgoAAAANSUhEUgAAAJ4AAABHCAYAAAD2tP6cAAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFn
+                ZVJlYWR5ccllPAAADI5JREFUeNrsXQ2UFVUdv7svqSQVSEA0EpVSEYnqpBbfiiIWhYWhQiZFgIS7gLCb
+                fIMg4iatKRp+cMxQwIMloR5M1lDIFDmkiUCGRBaKYigqqAsP+v2c35wdZ9/uvn1v3szse/d/zv/Me/e9
+                uXNn7m/u/d//1y0yIdO5x01ri8N08BBwc/BfwVOf2DVrTRjXP3z4sLEUPRWFCLhmOJQSZOCjUvzlQfBE
+                APBfFngWeEGBbgAO88EdVbQWPAG8Q8ex4CPAH4FvAl8PAO6zwLPAyxRwnXD4FfgCFf0bXA5QLfP9r6OA
+                OUBFr4F/kUwmFz+5e85hCzwLvHQB1xKHmeDR4AR4P3geuAKg+6Ce8/oJgJ1U9Cy4BOest8CzwKsPcJ/C
+                4Wfg2eBWKl4CLgN4/tuIOkYLuC1UfC/4WtTxmgWeBZ4fMOficDO4s4o2cDEBsDydYX2fx+E68AiNmu9T
+                9uPUjTo/tMArcOABICdrQTBQRW9QPuMoBYAcCqD+MwXoPiriqvca1P0HC7wCBB4AQZXIJPA48KfB1eBK
+                TrMAxXs5kBsvFsBPUtGfNaK+aIFXAMDr1XpyUSKR+LGmvXYqXqFR6JUcr5I/I6BPNo7yOQm+wzgK6P9Z
+                4OUp8NDx5+Dwa/A3VPQSeCw6fXWYjUY7jsdhLvgKFb1jHGvIbWjLQQu8PAEeOvoEqUOGqOht41ggFjbU
+                0TkG4NmS/85W0WbweLTpMQu8Jgw8dOxnOYVSlQE+UlPb7Rxd0Ll74nADmvqH4uMN4ONVvFIA3GaB18SA
+                B9BdgkMF+EQVrda0+lKWo9TXjGPNaA3uHhSAUe/n9IJco8XOAc9i510LvJgDDx3YVR3WS0WvaOGwIgBg
+                zAKXGEcvR+qNep8MePrlqveX4O+r6E0B8h6qdyzwYgY8dFgb4yhsh4OLwVSJzDGOwrY6SzB8B4cF4C+C
+                qfylAwAVxH1y5Q6Fa/bWQuhMFW0k6Kten/kX2+0xAR46aZRkpGM4G3F0MI6J6o0AVp/s/B+oqAo8UqvR
+                abkEnq7PkXWERtpjVXw/+OcA4Du2+yMEHjqHttU79J3mLSplN2TZ4RwxR0nlcTR4t4T9xfp9htQffcJw
+                AJXTAq83RtM8R72eAN8hC4FoiACZpM/lyWSyewCg6yIALxDoFoFPc0EXBeHab4Pp80f5lYrmbpQvbfdH
+                R/QE6aDPN2Xj+wbAHanpc4JGla0c9YJePGQJwE1o56P4+CPjuF49YSEQHfDcTklmAboLcbjNOHbUaslU
+                81DnRzG850P+e7cUIfAyBFxbqV4uVdEajXL/sI/WUuDAk7WAixKa0VpIbpoAGfG3QbuqW7LAc0c5ykZ3
+                gr+lot8ZR8G8u1Ae2nntpj+MQ/d6/sKXby94p2RdWn1W4hm934jnfLnEF6+M2iKN8+7D4dsN/I16VNrb
+                t4CfAj+Euv+TRt2s975QgYeL0gxFx4Ay40SE/RN8FRpcVYAvLK0wxzTwH4LkRL2gP+GsgGfIQKe707xG
+                szSukYqap3Eef6eO9QzwIPB8tO03xgnE2l/PeUdk2KaU6pR0iYb3ybo4VSVdChR0mRItNXdJhxnHmY86
+                zsfRvuZxm2rP93xmXMUXwNssnj4mTll/8r3Q7cE9BDgvTUXnLsNLuyWktnEK9aqNjtJoTFNia99/OTrT
+                wbe0jrooPrxQzyjawVe2yTgeTYEsLjgU04HgRTxA2nYZsnigwIG3Xgpqv3jC6ZKqpXIfKC8zjs4zDNqI
+                tl2Zom1sx/eMY7U61vPTSPxGt7daJkWUMdygax2iGGNu/HEwPVLVQ0eN4gxupKNkPdp56UTwPC7azQ56
+                tYnOFVjpX5tilOgUg7YdUsDUFb6fKMv3zPX1MwHeB2jwbE23VXqI6yicgltYuH2SpF5aH8BMkyt6TCtc
+                L305jsBz35ht4L7GMT9RlUKvk60A36UWbilXuF56NUajMi05e1Ks2uMJPE/Dafw/DUw1AS0ZSwC+VeAO
+                Fm8fyz6tfAsz0kMxal8ixSJjT+yBJ/DtAQ+XbMDVGnOgbMZNlSklhZ9OLxDQddZU5h3x/ohnFSfnhP7G
+                8SLy0tY4qVPSAeBauc5TyTzFOCa1oSgbzsQ7OPLNYlD2D42TkuzlfMEY7s07iiUkJ/llpZUSTeLyYnQ1
+                Nb6YLjE+ZV2TAp67ksNhNm5qKY7Uhp8Hfgbfl2gkpF5rO3h4EEl4YkLtxXURPbkZKLU0gra1k6rDpeYS
+                iXqDLzI18S8uVTZgvYgn8LyLDxz64qZnSf1yuX56HDwwjJuLEbGj7+fIb5zQ0DDjPs4ytfVrdRHbNTeM
+                RhXnqmLadmUecpWnO3WkoL1Q026+EOXam328WGoU1/+vSKM/xZGSGN4Djf/9ssnEFfmIhwdLy8ZC8KnG
+                iVYbq+8MObyFch+4F/53eq5SzoZMKS0XehY0xtNn8RIPACtRTovCuhi0nSa1QUEmvwwdeMppxyDwYSpi
+                Qu0Sjyy3HP+p0khACwiDu9fm8xzLe+/VevLgRCJBAHbzgG9cGEK8ps8pnu986X/q+U6be+hpSIoDBN1Q
+                TTnD9BYNwEMf5F9AMPBGD8OkEGzzkmS9WOQr7hHS5d9iJJ/L0jjs9fxeJE1D0wIeAHcKmI6OdAilspTp
+                KTrhJh82lrzkV8pGIuMqZcgNvuLe6MPvNompFg2lX95ErViZt45hkSNxYxstxlJSR9/3KAOhuPi52tQk
+                OSJVMAIvrOxfxRmCjn5bfzOOd8pBySvnWNDV+bz4Yo7wFW+KUO5k5v3pvmIqu0fFeap9UEIx3aZXaFqt
+                zCY8Ms9Bxw6lk+iXUjzHKOkeU9s0NiMsD6NMplpmd6dO7upME2DnIZ2FDqv0ldEjt4tW7n7i81sQ8Wr7
+                INpMX0FvH1IrMUkLkNiMeN4k12Mt6D5BdHoo9fGVdYBuF7i/N2dfhOCjfdm/HUSpUr3FBngDPY1cxjdc
+                Oe8spU8PcHRsbKb6HFO57zvd9efGBnh4WNuZ1AcfrzKONYJv9eawl+ExIcbH7m2Aqb/cIlmOU9dJeIaD
+                04lfFVWnqDMd2uc7Z18D/Up5fbnvnH7o16828pkcSNHeOoP7mabssBqQdgZ4nHOcccxAg1XEabekEdtG
+                UbDllgV9wtqnNsW1x1W9PrPSDsLRUEbqFIBlF5gu7nQi5I6MF2v0G6PoJUuWggeeB4CrjBPsQ/ss05TR
+                AeAZORhastQw8OpwUU8HfPvBZVrBPWeczVc2oL4K5cyLG7kihdU7Rgw8NxtAObNAZTH6/R0H7vxDUwyd
+                PCdo+r0oLjcrZe6F+mpTqUUMvOv1eXYikXhW20ZlCj4GCd9qnKiz3xsnac0jTNmgBUlUgDsafKNxzFTM
+                bk+3rNW2+yOedtApdGWia0xLldMblZmDdmbZ4VS1EIjttbzmdqIMLlkUxqpWC51hernaqJiqg5FY0e6x
+                3R+9vOPGfzI+goZidzt3dtj8+rZzT6Pz3Y1VSjXCcrt3lp1hcrvPBXWO3OrA1UdRFCgF4NbYbo8R8Dwd
+                RkBQv9VXRTvAEwGQ5VkC4esa7bxmpMCBh+twExeGVboZDd4yjuvWnXRksDv7xBR4ng6kiYxbM52iImZv
+                5x4YL2QBioQWH8y9QtMMtyHYHhDguIIuE3PzP7pr0RA/w5uxyAIv5sBTZzJzEINYpmh6ZMQU09BOzSb1
+                rFxvWqCOHdnegPIx04Jyo6mJbaV+cRzqrxURb4HXBIDnAQpXpHO1IOA5HEFmckSJMjeedoKkHOcG0TAz
+                AXcQeqSucyzwmhDwPB1N5TDdpr+poq0aWVaFDLi2WvgM0z28qxfh1oY2/LPAa4LA80xtl2lqO0HFjwqA
+                L+cYcM20OuZigSlViaK7KArg2m+mU4cFXhMFngcEzMFBXy4G/DCm4ICmvesAgr05AB11gtQ1ukEzjMel
+                R8zzjanHAq+JA88DiA4a/dxIeS46mB3+biX9y7Z+OiEwZPICFdEbpgx1P5BJfRZ4eQI8D0B6asT7iooY
+                hUYX+acyrK+l5LbRpkahTf1cRTYKbQu8PAOewELLBLeaYjZ4N2CZIxMV0K+mWQe9ZEaojlYq5ubG5ek6
+                mlrgFRjwPOBhhBXjNqksJpA+1HQ8r770ZDiP2ZRoNemsouc0aj4dVNss8PIYeB4gnSr5rL+KOGKVJZPJ
+                pd7N9vC/k7VwcBMIMpEhHQruDUJOtMArMOB5gNVfI5mbmpUjGP316As4XkxVSbWAOgeAey8XbbHAKyDg
+                CXzMtTJGU3CqjdiYlWB8ULZbCzwLPD8A2wh8Q4xj/6VT5jQALhTHTAu8eND/BRgAhhak4IQeutMAAAAA
+                SUVORK5CYII=
+</property>
+        </structure>
+    </list-property>
+</report>
