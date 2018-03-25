@@ -3,7 +3,7 @@ FROM tomcat:8-alpine
 ENV BIRT_VIEWER_WORKING_FOLDER /var/opt/reports
 ENV WEBAPPS_PATH /var/opt/webapps
 ENV BIRT_APP birt
-ENV CONTEXT_PATH birt
+ENV CONTEXT_PATH ROOT
 
 #Install MS True Type, Ionicons and Font Awesome fonts
 RUN rm -rf /var/cache/apk/* && \
@@ -52,6 +52,8 @@ COPY ./templates/context.xml "$CATALINA_HOME/template-context.xml"
 
 RUN chmod +x /usr/local/bin/run.sh
 
+RUN rm -rf "${CATALINA_HOME}/webapps/ROOT"
+
 #Modify the web.xml to change the reports folder
 COPY ./templates/web.xml "$WEBAPPS_PATH/$BIRT_APP/WEB-INF/web.xml"
      
@@ -62,6 +64,4 @@ COPY ./templates/website/ "$WEBAPPS_PATH/$BIRT_APP"
 #Map the birt reports folder
 VOLUME $BIRT_VIEWER_WORKING_FOLDER
 
-CMD ["/usr/local/bin/run.sh", "$CATALINA_HOME/template-context.xml", "$CATALINA_HOME/conf/Catalina/localhost/$CONTEXT_PATH.xml"]
-
-ENTRYPOINT /bin/bash
+CMD ["sh", "-c", "/usr/local/bin/run.sh ${CATALINA_HOME} ${CONTEXT_PATH}" ]

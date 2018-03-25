@@ -45,6 +45,7 @@
       display: block;
       position: relative;
       height: auto;
+      background-color: #42187e;
     }
 
     .text-center {

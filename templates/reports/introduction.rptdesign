@@ -384,7 +384,7 @@ Exporting files without the viewer
 Incase you wanted to generate the exported file without showing the view frame, the preview url is very usefull
 </p>
 <p>
-http:localhost:8080/preview?__report=introduction.rptdesign&amp;__format=pdf&amp;message=hello%20world&amp;__parameterpage=false
+http:localhost:8080/preview?__report=introduction.rptdesign&amp;__format=pdf&amp;message=hello+world
 </p>]]></text-property>
                                 </text>
                             </cell>
@@ -551,7 +551,7 @@ http:localhost:8080/preview?__report=introduction.rptdesign&amp;__format=pdf&amp
                                 <property name="color">#6C7A83</property>
                                 <label id="846">
                                     <property name="fontWeight">bold</property>
-                                    <text-property name="text">https://www.github.com/paulsalmon-za</text-property>
+                                    <text-property name="text">https://github.com/paulsalmon-za/docker-birt-viewer</text-property>
                                 </label>
                             </cell>
                         </row>

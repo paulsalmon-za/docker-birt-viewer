@@ -1,4 +1,4 @@
 <Context 
-  docBase="/var/opt/websites/birt"
+  docBase="/var/opt/webapps/birt"
   reloadable="true"
 />

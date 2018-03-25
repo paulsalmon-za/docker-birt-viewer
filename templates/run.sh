@@ -1,5 +1,3 @@
-#!/bin/bash
-
-cp "$1" "$2" 
-
-/bin/bash /usr/local/tomcat/bin/catalina.sh run
+#!/bin/sh
+cp "$1/template-context.xml" "$1/conf/Catalina/localhost/$2.xml"
+/bin/sh "$1/bin/catalina.sh" run
