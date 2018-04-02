@@ -32,9 +32,9 @@ RUN wget "http://www.eclipse.org/downloads/download.php?file=/birt/downloads/dro
 #Install MSSQL, PostgreSQL and MySql drivers
 RUN ls "$WEBAPPS_PATH/$BIRT_APP" && \
     wget "https://download.microsoft.com/download/0/2/A/02AAE597-3865-456C-AE7F-613F99F850A8/sqljdbc_6.0.8112.200_enu.tar.gz" -P /tmp && \
-    wget "https://jdbc.postgresql.org/download/postgresql-42.2.2.jar" -P "$CATALINA_HOME/webapps/$BIRT_APP/WEB-INF/lib/" && \
+    wget "https://jdbc.postgresql.org/download/postgresql-42.2.2.jar" -P "$WEBAPPS_PATH/$BIRT_APP/WEB-INF/lib/" && \
     wget "https://dev.mysql.com/get/Downloads/Connector-J/mysql-connector-java-5.1.46.tar.gz" -P /tmp && \
-    tar -xf "/tmp/sqljdbc_6.0.8112.200_enu.tar.gz" -C "$WEBAPPS_PATH/$BIRT_APP/WEB-INF/lib/" --strip-components=2 sqljdbc_6.0/enu/jre8/sqljdbc42.jar && \
+    tar -xf "/tmp/sqljdbc_6.0.8112.200_enu.tar.gz" -C "$WEBAPPS_PATH/$BIRT_APP/WEB-INF/lib/" --strip-components=3 sqljdbc_6.0/enu/jre8/sqljdbc42.jar && \
     tar -xf "/tmp/mysql-connector-java-5.1.46.tar.gz" -C "$WEBAPPS_PATH/$BIRT_APP/WEB-INF/lib/" --strip-components=1 mysql-connector-java-5.1.46/mysql-connector-java-5.1.46-bin.jar && \
     rm -rf /tmp/*
 

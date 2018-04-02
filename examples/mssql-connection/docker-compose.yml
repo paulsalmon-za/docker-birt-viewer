@@ -1,0 +1,23 @@
+version: '3'
+
+services:
+  nginx:
+    image: nginx:1.13-alpine
+    ports:
+      - "80:80"
+    volumes:
+      - ./Instructions:/usr/share/nginx/html
+  birt:
+    image: dodevza/birt-viewer
+    ports:
+      - "8080:8080"
+    volumes:
+      - ./Reports:/var/opt/reports
+  mssql:
+    image: microsoft/mssql-server-linux:2017-CU5
+    ports:
+      - "1433:1433"
+    environment:
+      - ACCEPT_EULA='Y'
+      - SA_PASSWORD=mSsQl201&
+    
